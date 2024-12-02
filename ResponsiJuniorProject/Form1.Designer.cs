@@ -40,6 +40,7 @@
             btnDelete = new Button();
             label4 = new Label();
             dgvData = new DataGridView();
+            btnLoad = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvData).BeginInit();
             SuspendLayout();
@@ -100,37 +101,40 @@
             // 
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(150, 176);
+            listBox1.Location = new Point(150, 164);
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(120, 19);
             listBox1.TabIndex = 6;
             // 
             // btnInsert
             // 
-            btnInsert.Location = new Point(12, 201);
+            btnInsert.Location = new Point(12, 189);
             btnInsert.Name = "btnInsert";
             btnInsert.Size = new Size(181, 23);
             btnInsert.TabIndex = 7;
             btnInsert.Text = "Insert";
             btnInsert.UseVisualStyleBackColor = true;
+            btnInsert.Click += btnInsert_Click;
             // 
             // btnEdit
             // 
-            btnEdit.Location = new Point(199, 201);
+            btnEdit.Location = new Point(199, 189);
             btnEdit.Name = "btnEdit";
             btnEdit.Size = new Size(189, 23);
             btnEdit.TabIndex = 8;
             btnEdit.Text = "Edit";
             btnEdit.UseVisualStyleBackColor = true;
+            btnEdit.Click += btnEdit_Click;
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(394, 201);
+            btnDelete.Location = new Point(394, 189);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(165, 23);
             btnDelete.TabIndex = 9;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // label4
             // 
@@ -146,16 +150,27 @@
             // dgvData
             // 
             dgvData.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvData.Location = new Point(12, 230);
+            dgvData.Location = new Point(12, 218);
             dgvData.Name = "dgvData";
-            dgvData.Size = new Size(547, 208);
+            dgvData.Size = new Size(547, 202);
             dgvData.TabIndex = 11;
+            // 
+            // btnLoad
+            // 
+            btnLoad.Location = new Point(199, 426);
+            btnLoad.Name = "btnLoad";
+            btnLoad.Size = new Size(165, 23);
+            btnLoad.TabIndex = 12;
+            btnLoad.Text = "Load";
+            btnLoad.UseVisualStyleBackColor = true;
+            btnLoad.Click += btnLoad_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(571, 450);
+            Controls.Add(btnLoad);
             Controls.Add(dgvData);
             Controls.Add(label4);
             Controls.Add(btnDelete);
@@ -190,5 +205,6 @@
         private Button btnDelete;
         private Label label4;
         private DataGridView dgvData;
+        private Button btnLoad;
     }
 }
