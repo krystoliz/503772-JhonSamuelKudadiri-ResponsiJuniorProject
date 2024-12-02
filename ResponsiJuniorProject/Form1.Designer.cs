@@ -32,16 +32,16 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            textBox1 = new TextBox();
+            txtNama = new TextBox();
             richTextBox1 = new RichTextBox();
             listBox1 = new ListBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            btnInsert = new Button();
+            btnEdit = new Button();
+            btnDelete = new Button();
             label4 = new Label();
-            dataGridView1 = new DataGridView();
+            dgvData = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvData).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -81,56 +81,56 @@
             label3.Text = "Dep. Karyawan :";
             label3.Click += label3_Click;
             // 
-            // textBox1
+            // txtNama
             // 
-            textBox1.Location = new Point(150, 92);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 4;
+            txtNama.Location = new Point(150, 92);
+            txtNama.Name = "txtNama";
+            txtNama.Size = new Size(158, 23);
+            txtNama.TabIndex = 4;
             // 
             // richTextBox1
             // 
             richTextBox1.Location = new Point(150, 134);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(100, 24);
+            richTextBox1.Size = new Size(158, 24);
             richTextBox1.TabIndex = 5;
-            richTextBox1.Text = "";
+            richTextBox1.Text = "txtDep";
             // 
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(150, 174);
+            listBox1.Location = new Point(150, 176);
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(120, 19);
             listBox1.TabIndex = 6;
             // 
-            // button1
+            // btnInsert
             // 
-            button1.Location = new Point(72, 232);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 7;
-            button1.Text = "Insert";
-            button1.UseVisualStyleBackColor = true;
+            btnInsert.Location = new Point(12, 201);
+            btnInsert.Name = "btnInsert";
+            btnInsert.Size = new Size(181, 23);
+            btnInsert.TabIndex = 7;
+            btnInsert.Text = "Insert";
+            btnInsert.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnEdit
             // 
-            button2.Location = new Point(242, 232);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 8;
-            button2.Text = "Edit";
-            button2.UseVisualStyleBackColor = true;
+            btnEdit.Location = new Point(199, 201);
+            btnEdit.Name = "btnEdit";
+            btnEdit.Size = new Size(189, 23);
+            btnEdit.TabIndex = 8;
+            btnEdit.Text = "Edit";
+            btnEdit.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnDelete
             // 
-            button3.Location = new Point(436, 233);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 9;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
+            btnDelete.Location = new Point(394, 201);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(165, 23);
+            btnDelete.TabIndex = 9;
+            btnDelete.Text = "Delete";
+            btnDelete.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -143,27 +143,27 @@
             label4.TabIndex = 10;
             label4.Text = "ID Departemen:\r\nHR : HR\r\nENG : Engineer\r\nDEV : Developer\r\nPM : Project Manager\r\nFIN : Finance\r\n";
             // 
-            // dataGridView1
+            // dgvData
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(112, 288);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(399, 150);
-            dataGridView1.TabIndex = 11;
+            dgvData.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvData.Location = new Point(12, 230);
+            dgvData.Name = "dgvData";
+            dgvData.Size = new Size(547, 208);
+            dgvData.TabIndex = 11;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(571, 450);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgvData);
             Controls.Add(label4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnDelete);
+            Controls.Add(btnEdit);
+            Controls.Add(btnInsert);
             Controls.Add(listBox1);
             Controls.Add(richTextBox1);
-            Controls.Add(textBox1);
+            Controls.Add(txtNama);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -171,7 +171,7 @@
             Name = "Form1";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvData).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -182,13 +182,13 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private TextBox textBox1;
+        private TextBox txtNama;
         private RichTextBox richTextBox1;
         private ListBox listBox1;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private Button btnInsert;
+        private Button btnEdit;
+        private Button btnDelete;
         private Label label4;
-        private DataGridView dataGridView1;
+        private DataGridView dgvData;
     }
 }
