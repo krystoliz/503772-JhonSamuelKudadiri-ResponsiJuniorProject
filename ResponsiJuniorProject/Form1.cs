@@ -36,6 +36,10 @@ namespace ResponsiJuniorProject
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
+            if(r == null)
+            {
+                MessageBox.Show("Pilih data yang akan diubah","Good", MessageBoxButtons.OK);
+            }
 
         }
 

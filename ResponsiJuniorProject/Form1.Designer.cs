@@ -33,14 +33,13 @@
             label2 = new Label();
             label3 = new Label();
             txtNama = new TextBox();
-            richTextBox1 = new RichTextBox();
-            listBox1 = new ListBox();
             btnInsert = new Button();
             btnEdit = new Button();
             btnDelete = new Button();
             label4 = new Label();
             dgvData = new DataGridView();
             btnLoad = new Button();
+            txtDep = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvData).BeginInit();
             SuspendLayout();
@@ -88,23 +87,6 @@
             txtNama.Name = "txtNama";
             txtNama.Size = new Size(158, 23);
             txtNama.TabIndex = 4;
-            // 
-            // richTextBox1
-            // 
-            richTextBox1.Location = new Point(150, 134);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(158, 24);
-            richTextBox1.TabIndex = 5;
-            richTextBox1.Text = "txtDep";
-            // 
-            // listBox1
-            // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(150, 164);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(120, 19);
-            listBox1.TabIndex = 6;
             // 
             // btnInsert
             // 
@@ -165,19 +147,25 @@
             btnLoad.UseVisualStyleBackColor = true;
             btnLoad.Click += btnLoad_Click;
             // 
+            // txtDep
+            // 
+            txtDep.Location = new Point(150, 137);
+            txtDep.Name = "txtDep";
+            txtDep.Size = new Size(158, 23);
+            txtDep.TabIndex = 13;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(571, 450);
+            Controls.Add(txtDep);
             Controls.Add(btnLoad);
             Controls.Add(dgvData);
             Controls.Add(label4);
             Controls.Add(btnDelete);
             Controls.Add(btnEdit);
             Controls.Add(btnInsert);
-            Controls.Add(listBox1);
-            Controls.Add(richTextBox1);
             Controls.Add(txtNama);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -198,13 +186,12 @@
         private Label label2;
         private Label label3;
         private TextBox txtNama;
-        private RichTextBox richTextBox1;
-        private ListBox listBox1;
         private Button btnInsert;
         private Button btnEdit;
         private Button btnDelete;
         private Label label4;
         private DataGridView dgvData;
         private Button btnLoad;
+        private TextBox txtDep;
     }
 }
